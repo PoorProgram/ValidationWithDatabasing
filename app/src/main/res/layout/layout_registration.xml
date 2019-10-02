@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="-80dp"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Academic Program" />
+
+            <Spinner
+                android:id="@+id/courses"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:entries="@array/Course" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lastname"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firstname"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Middlename"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/middlename"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male"
+                android:checked="true"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/female"
+                android:layout_weight="1"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Requirements"
+            android:layout_marginTop="10dp"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NSO/PSA Birth Certificate"
+            android:id="@+id/nso"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certificate of Good Moral Character"
+            android:id="@+id/cogmc"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Original Report Card (Form 138)"
+            android:id="@+id/reportform"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</ScrollView>
